@@ -1,0 +1,122 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+header h1 {
+  margin: 0;
+  font-family: "Italiana", serif;
+  font-size: 50px;
+}
+
+a {
+  color: unset;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.book {
+  border-radius: 20px;
+  position: relative;
+  overflow: auto;
+  width: 80vw;
+  max-width: 600px;
+}
+.book .content {
+  padding: 15px;
+  overflow: auto;
+}
+.book .content #title {
+  margin-top: 0;
+}
+.book .content #rules {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 10px;
+  list-style-type: none;
+}
+.book .content #rules li {
+  background-color: #fcdea8;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+.book .content .video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.book .content .video video {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px RGBA(0, 0, 0, 0.2);
+}
+
+.controls {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.controls p {
+  margin: 0;
+}
+.controls button {
+  background: none;
+  border: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-family: unset;
+  color: unset;
+}
+
+footer {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer .line {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  width: 40px;
+  height: 40px;
+}
+footer img {
+  width: 40px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

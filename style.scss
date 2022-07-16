@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+    h1 {
+        margin: 0;
+        font-family: "Italiana", serif;
+        font-size: 50px;
+    }
+}
+
+a {
+    color: unset;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.book {
+    border-radius: 20px;
+    position: relative;
+    overflow: auto;
+    width: 80vw;
+    max-width: 600px;
+
+    .content {
+        padding: 15px;
+        overflow: auto;
+
+        #title {
+            margin-top: 0;
+        }
+
+        #rules {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 10px;
+            list-style-type: none;
+
+            li {
+                background-color: #fcdea8;
+                padding: 2px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px black;
+            }
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            video {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px RGBA(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+.controls {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    p {
+        margin: 0;
+    }
+
+    button {
+        background: none;
+        border: none;
+        height: fit-content;
+        cursor: pointer;
+        font-family: unset;
+        color: unset;
+    }
+}
+
+footer {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+        margin: 0;
+    }
+
+    .line {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        width: 40px;
+        height: 40px;
+    }
+    
+    img {
+        width: 40px;
+        border-radius: 50%;
+    }
+}
