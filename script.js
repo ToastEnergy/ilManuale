@@ -32,7 +32,7 @@ const rules = [
         title: "Automobili",
         video: "assets/regole/Regola4.webm",
         description:
-            "Per poter giocare è necessario avere una vasta flotta di automibili, trovane il più possibile e prenditi cura con interventi di manutenzione ordinaria (benzina, riparazione) e potenziamenti vari.",
+            "Per poter giocare è necessario avere una vasta flotta di automibili, trovane il più possibile e prenditene cura con interventi di manutenzione ordinaria (benzina, riparazione) e potenziamenti vari.",
     },
     {
         title: "La Tanica",
