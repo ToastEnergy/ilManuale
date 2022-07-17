@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Il Manuale | Quiz</title>
+        <meta http-equiv="content-language" content="it" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Questo manuale contiene le tecnice essenziali per giocare a Fortnite."
+        />
+        <meta name="theme-color" content="#b5c6df" />
+        <meta name="author" content="Toast Energy" />
+        <meta
+            name="keywords"
+            content="Il Manuale, fortnite, toast energy, Il manuale fornite, manuale fortnite, manuale, guida, guida fortnite, come vincere su fortnite, come vincere a fortnite, come giocare a fortnite, fortnite tutorial, il manuale per fortnite, manuale per fortnite, ho cagato"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta property="og:title" content="Il Manuale" />
+        <meta
+            property="og:description"
+            content='Una domanda che può sorgere a un comune player di Fortnite può essere: "Come posso diventare più forte?" Questi sono 11 punti su come diventare i giocatori più forti del gioco, che voi siate da ps4, xbox, nintendo switch, mobile o pc.'
+        />
+        <meta property="og:image" content="assets/favicon-500.png" />
+
+        <link rel="icon" href="assets/favicon-64.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Il Manuale</a></h1>
+        </header>
+
+        <div class="container">
+            <div class="book">
+                <div class="quiz-intro">
+                    <h2>Certificazione Giorgiovola</h2>
+                    <p>
+                        Completa i seguenti quisiti per ricevere una
+                        certificazione personale del manuale di Fortnite!
+                    </p>
+                    <button class="start-quiz" onclick="startQuiz()">
+                        Comincia il Quiz
+                    </button>
+                </div>
+                <div id="quiz" class="quiz hidden">
+                    <p id="number"></p>
+                    <p class="question" id="question">
+                        Qual'è l'oggetto che va sempre tenuto nell'inventario?
+                    </p>
+                    <form id="form">
+                        <div class="options">
+                            <label class="option">
+                                <input
+                                    type="radio"
+                                    name="question"
+                                    value="a"
+                                    id="optiona"
+                                    required
+                                />
+                                <span id="labela">Una manciata di cibo</span>
+                            </label>
+                            <label class="option">
+                                <input
+                                    type="radio"
+                                    name="question"
+                                    value="b"
+                                    id="optionb"
+                                    required
+                                />
+                                <span id="labelb">Uno scudo</span>
+                            </label>
+                            <label class="option">
+                                <input
+                                    type="radio"
+                                    name="question"
+                                    value="c"
+                                    id="optionc"
+                                    required
+                                />
+                                <span id="labelc">Uno scudo</span>
+                            </label>
+                            <label class="option">
+                                <input
+                                    type="radio"
+                                    name="question"
+                                    value="d"
+                                    id="optiond"
+                                    required
+                                />
+                                <span id="labeld">La Tanica</span>
+                            </label>
+                            <input type="submit" value="Next Question" />
+                        </div>
+                    </form>
+                </div>
+                <div id="score" class="score hidden">
+                    <p id="passed"></p>
+                    <p class="label">Punteggio</p>
+                    <p id="points"></p>
+                    <p class="label">Voto</p>
+                    <p class="grade"><span id="grade"></span> / 100</p>
+                    <div id="certificate">
+                        <label for="name"
+                            >Inserisci il tuo nome per scaricare il
+                            certificato.</label
+                        >
+                        <br />
+                        <input id="name" type="text" placeholder="Nome" />
+                        <button onclick="gencert()">Genera certificato</button>
+                        <canvas id="canvas"></canvas>
+                        <a id="download" class="hidden" download>download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="quiz.js" type="text/javascript"></script>
+    </body>
+</html>

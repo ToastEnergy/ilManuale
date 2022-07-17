@@ -35,7 +35,6 @@ a {
 }
 
 .book {
-  border-radius: 20px;
   position: relative;
   overflow: auto;
   width: 80vw;
@@ -119,4 +118,33 @@ footer a {
 footer img {
   width: 40px;
   border-radius: 50%;
+}
+
+.start-quiz, input[type=submit] {
+  background-color: #fcdea8;
+  border: none;
+  font-family: unset;
+  color: unset;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px RGBA(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.quiz .options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quiz input[type=submit] {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.score p {
+  margin: 0;
+}
+.score .label {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
