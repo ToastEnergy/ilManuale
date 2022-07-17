@@ -1,79 +1,127 @@
 <!DOCTYPE html>
 <html lang="it">
+    <head>
+        <title>Il Manuale</title>
+        <meta http-equiv="content-language" content="it" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Questo manuale contiene le tecnice essenziali per giocare a Fortnite."
+        />
+        <meta name="theme-color" content="#b5c6df" />
+        <meta name="author" content="Toast Energy" />
+        <meta
+            name="keywords"
+            content="Il Manuale, fortnite, toast energy, Il manuale fornite, manuale fortnite, manuale, guida, guida fortnite, come vincere su fortnite, come vincere a fortnite, come giocare a fortnite, fortnite tutorial, il manuale per fortnite, manuale per fortnite, ho cagato"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta property="og:title" content="Il Manuale" />
+        <meta
+            property="og:description"
+            content='Una domanda che può sorgere a un comune player di Fortnite può essere: "Come posso diventare più forte?" Questi sono 11 punti su come diventare i giocatori più forti del gioco, che voi siate da ps4, xbox, nintendo switch, mobile o pc.'
+        />
+        <meta property="og:image" content="assets/favicon-500.png" />
 
-<head>
-    <title>Il Manuale</title>
-    <meta http-equiv="content-language" content="it">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Questo manuale contiene le tecnice essenziali per giocare a Fortnite.">
-    <meta name="theme-color" content="#b5c6df">
-    <meta name="author" content="Toast Energy">
-    <meta name="keywords" content="Il Manuale, fortnite, toast energy, Il manuale fornite, manuale fortnite, manuale, guida, guida fortnite, come vincere su fortnite, come vincere a fortnite, come giocare a fortnite, fortnite tutorial, il manuale per fortnite, manuale per fortnite, ho cagato">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta property="og:title" content="Il Manuale">
-    <meta property="og:description" content="Una domanda che può sorgere a un comune player di Fortnite può essere: &quot;Come posso diventare più forte?&quot; Questi sono 11 punti su come diventare i giocatori più forti del gioco, che voi siate da ps4, xbox, nintendo switch, mobile o pc.">
-    <meta property="og:image" content="assets/favicon-500.png">
+        <link rel="icon" href="assets/favicon-64.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" type="text/javascript"></script>
+        <script
+            src="https://kit.fontawesome.com/2cd6389f66.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-    <link rel="icon" href="assets/favicon-64.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/2cd6389f66.js" crossorigin="anonymous"></script>
-</head>
+    <body>
+        <header>
+            <h1><a href="/">Il Manuale</a></h1>
+        </header>
 
-<body>
-    <header>
-        <h1><a href="/">Il Manuale</a></h1>
-    </header>
-
-    <div class="container">
-        <div class="controls">
-            <button onclick="updatePage('backward')"><i class="fa-solid fa-chevron-left"></i></button>
-            <p id="currentPage">0</p>
-            <button onclick="updatePage('forward')"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        <div class="book">
-            <div class="content">
-                <h2 id="title">Il Manuale</h2>
-                <p id="body">Una domanda che può sorgere a un comune player di Fortnite può essere: "Come posso diventare più forte?"</p>
-                <p id="b2">Questi sono 11 punti su come diventare i giocatori più forti del gioco, che voi siate da ps4, xbox, nintendo switch, mobile o pc.</p>
-                <ul id="rules">
-                    <li><a href="?r=1">Regola 1</a></li>
-                    <li><a href="?r=2">Regola 2</a></li>
-                    <li><a href="?r=3">Regola 3</a></li>
-                    <li><a href="?r=4">Regola 4</a></li>
-                    <li><a href="?r=5">Regola 5</a></li>
-                    <li><a href="?r=6">Regola 6</a></li>
-                    <li><a href="?r=7">Regola 7</a></li>
-                    <li><a href="?r=8">Regola 8</a></li>
-                    <li><a href="?r=9">Regola 9</a></li>
-                    <li><a href="?r=10">Regola 10</a></li>
-                    <li><a href="?r=11">Regola 11</a></li>
-                </ul>
-                <div class="video">
-                    <video loop="" src="assets/hocagato.webm" id="video" autoplay controls />
+        <div class="container">
+            <div class="controls">
+                <button onclick="updatePage('backward')">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <p id="currentPage">0</p>
+                <button onclick="updatePage('forward')">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="book">
+                <div class="content">
+                    <h2 id="title">Il Manuale</h2>
+                    <p id="body">
+                        Una domanda che può sorgere a un comune player di
+                        Fortnite può essere: "Come posso diventare più forte?"
+                    </p>
+                    <p id="b2">
+                        Questi sono 15 punti su come diventare i giocatori più
+                        forti del gioco, che voi siate da ps4, xbox, nintendo
+                        switch, mobile o pc.
+                    </p>
+                    <ul id="rules">
+                        <li><a href="?r=1">Regola 1</a></li>
+                        <li><a href="?r=2">Regola 2</a></li>
+                        <li><a href="?r=3">Regola 3</a></li>
+                        <li><a href="?r=4">Regola 4</a></li>
+                        <li><a href="?r=5">Regola 5</a></li>
+                        <li><a href="?r=6">Regola 6</a></li>
+                        <li><a href="?r=7">Regola 7</a></li>
+                        <li><a href="?r=8">Regola 8</a></li>
+                        <li><a href="?r=9">Regola 9</a></li>
+                        <li><a href="?r=10">Regola 10</a></li>
+                        <li><a href="?r=11">Regola 11</a></li>
+                        <li><a href="?r=12">Regola 12</a></li>
+                        <li><a href="?r=13">Regola 13</a></li>
+                        <li><a href="?r=14">Regola 14</a></li>
+                        <li><a href="?r=15">Regola 15</a></li>
+                    </ul>
+                    <div class="video">
+                        <video
+                            loop=""
+                            src="assets/hocagato.webm"
+                            id="video"
+                            autoplay
+                            controls
+                        />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="line">
-            <p>by</p> <a href="https://chickenmatty.me"><img src="https://avatars.githubusercontent.com/u/44543605?v=4?s=40"
-                    alt="chickenmatty's avatar"></a>
-            <p>&</p> <a href="https://seba.gq"><img src="https://avatars.githubusercontent.com/u/48064277?v=4?s=40"
-                    alt="ssebastianoo's avatar"></a>
-        </div>
-        <div class="line">
-            <p>inspired by</p>
-            <a href="https://Infinit7Even.it"><img src="https://avatars.githubusercontent.com/u/50268291?v=4?s=40"
-                    alt="Infinit7Even's Avatar"></a>
-        </div>
-    </footer>
-</body>
-
+        <footer>
+            <div class="line">
+                <p>by</p>
+                <a href="https://chickenmatty.me"
+                    ><img
+                        src="https://avatars.githubusercontent.com/u/44543605?v=4?s=40"
+                        alt="chickenmatty's avatar"
+                /></a>
+                <p>&</p>
+                <a href="https://seba.gq"
+                    ><img
+                        src="https://avatars.githubusercontent.com/u/48064277?v=4?s=40"
+                        alt="ssebastianoo's avatar"
+                /></a>
+            </div>
+            <div class="line">
+                <p>inspired by</p>
+                <a href="https://Infinit7Even.it"
+                    ><img
+                        src="https://avatars.githubusercontent.com/u/50268291?v=4?s=40"
+                        alt="Infinit7Even's Avatar"
+                /></a>
+            </div>
+        </footer>
+    </body>
 </html>

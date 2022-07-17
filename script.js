@@ -77,6 +77,33 @@ const rules = [
         description:
             "Mai lasciarsi andare a qualche sorso di scudo, e se qualcuno prova a forzarvi all'assunzione di esso tramite splash, scappate.",
     },
+    {
+        title: "Costruire? Lasciamolo ai geometri",
+        video: "assets/regole/Regola12.webm",
+        description:
+        "Costruire è un'attività molto pericolosa e va evitata ad ogni costo, potrebbe rallentarti mentre adempi ai tuoi doveri più importanti"+
+        " (come fare il meccanico e rovinare le partire agli altri). Attenti a non giocare mai zero costruzioni, visto che nessuno è rallentato "+
+        "dalle costruzioni sarà molto difficile vincere."
+    },
+    {
+        title: "Le munizioni sono un inganno",
+        video: "assets/regole/Regola13.webm",
+        description:
+            "Rimanere silenziosi è una skill essenziale per raggiungere la vittoria reale, per questo motivo ogni arma deve avere solo una munizione."+
+            " Attenti però, il gioco vi raccoglierà in automatico le munizioni per tenere nascosta questa tattica. Rilasciatele tutte (meno una) appena raccolte!",
+    },
+    {
+        title: "Accovacciati regolarmente",
+        video: "assets/regole/Regola14.webm",
+        description:
+            "Quando si combatte è essenziale rimanere accovacciati al fine di aumentare il danno inflitto ai nemici"
+    },
+    {
+        title: "Non c'è nulla di tragico nella morte",
+        video: "assets/regole/Regola15.webm",
+        description:
+            "La morte non è la fine dei giochi, se esci velocemente dal gioco (COMBINAZIONE: ALT+F4)  c'è la possibilità che il gioco si rompa e tu vinca la partita",
+    },
 ];
 
 const updatePage = (action = null) => {
