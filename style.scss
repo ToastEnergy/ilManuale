@@ -131,7 +131,7 @@ footer {
     }
 }
 
-.start-quiz, input[type="submit"] {
+.start-quiz, input[type="submit"], #download, .gen-cert {
     background-color: #fcdea8;
     border: none;
     font-family: unset;
@@ -157,11 +157,33 @@ footer {
 }
 
 .score {
+    padding-bottom: 20px;
+
     p {
         margin: 0;
     }
 
+    input {
+        border: none;
+        outline: none;
+        font-family: unset;
+        color: unset;
+        background-color: RGBA(0, 0, 0, 0.1);
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 2px RGBA(0, 0, 0, .5);
+    }
+
     .label {
         margin-top: 20px;
+    }
+
+    canvas {
+        width: 100%;
+        margin-bottom: 30px;;
+    }
+
+    #download {
+        text-decoration: none;
     }
 }

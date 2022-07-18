@@ -44,7 +44,7 @@
 
         <div class="container">
             <div class="book">
-                <div class="quiz-intro">
+                <div class="quiz-intro hidden">
                     <h2>Certificazione Giorgiovola</h2>
                     <p>
                         Completa i seguenti quisiti per ricevere una
@@ -105,7 +105,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="score" class="score hidden">
+                <div id="score" class="score">
                     <p id="passed"></p>
                     <p class="label">Punteggio</p>
                     <p id="points"></p>
@@ -118,9 +118,9 @@
                         >
                         <br />
                         <input id="name" type="text" placeholder="Nome" />
-                        <button onclick="gencert()">Genera certificato</button>
+                        <button onclick="gencert()" aria-label="Genera Certificato" class="gen-cert">Genera certificato</button>
                         <canvas id="canvas"></canvas>
-                        <a id="download" class="hidden" download>download</a>
+                        <a id="download" class="hidden" download>Scarica Certificato</a>
                     </div>
                 </div>
             </div>

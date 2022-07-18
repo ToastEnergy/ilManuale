@@ -181,6 +181,10 @@ function gencert(score) {
         return;
     }
 
+    const grade = {
+        grade: 100,
+    }
+
     canvas.width = 602;
     canvas.height = 289;
     const ctx = canvas.getContext("2d");
